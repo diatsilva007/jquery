@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
 
-<head>
-	<meta charset="UTF-8">
-	<title>jQuery</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script>
+			$(document).ready(() => {
+				console.log($('div').attr('style', 'background-color: blue; width: 200px; height: 200px'))
+			})
 
-		$(document).ready(() => {
-			console.log($('div').attr('style', 'background-color: blue; width: 200px; height: 200px'))
-		})
+		</script>
+	</head>
 
-	</script>
-</head>
+	<body>
+		
+		<img src="esfera_1.png" border="5" />
 
-<body>
+		<div style="background-color: red; width: 100px; height: 100px"></div>
 
-	<img src="esfera_1.png" border="5" />
+		<input type="text" value="Eu sou um input" />
 
-	<div style="background-color: red; width: 100px; height: 100px"></div>
-
-	<input type="text" value="Eu sou um input" />
-
-</body>
+	</body>
 
 </html>
